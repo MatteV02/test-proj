@@ -5,8 +5,8 @@
 
 /**
  * @brief Perform prime factorization of a number
- * @param n Number to factorize
- * @return A vector of the prime factors of the number
+ * @param n Number to factorize. n < 2 returns empty vector
+ * @return A vector of prime factors (empty if n < 2)
  */
 std::vector<int> primeFactorization(int n);
 

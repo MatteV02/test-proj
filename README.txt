@@ -25,3 +25,14 @@ cmake --build . --config Release
 
 # Run tests
 ctest -V
+
+## Documentation
+
+To generate API documentation:
+
+```bash
+# Build documentation
+cmake --build . --target docs
+
+# Documentation will be generated in build/docs/html
+# Open index.html in your browser

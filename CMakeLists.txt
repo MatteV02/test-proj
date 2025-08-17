@@ -39,3 +39,19 @@ target_link_libraries(test-proj PRIVATE math_utils)
 # ======================================
 enable_testing()
 add_subdirectory(test)
+
+# ======================================
+#  Documentation Configuration
+# ======================================
+find_package(Doxygen REQUIRED dot)
+
+# Configure Doxyfile
+configure_file(Doxyfile.in Doxyfile @ONLY)
+
+# Add documentation target
+add_custom_target(docs
+    COMMAND ${DOXYGEN_EXECUTABLE} ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+    COMMENT "Generating API documentation with Doxygen"
+    VERBATIM
+)

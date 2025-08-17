@@ -1,0 +1,72 @@
+# Build directories
+build/
+out/
+bin/
+*.exe
+*.out
+*.app
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+*.cmake
+CTestTestfile.cmake
+Testing/
+
+# GTest generated files
+googletest-build/
+googletest-download/
+googletest-prefix/
+
+# VSCode specific
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Executables and libraries
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+
+# Logs and diagnostics
+*.log
+*.tlog
+*.idb
+*.pdb
+*.ilk
+
+# Dependency directories
+deps/
+third_party/
+external/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE specific
+.idea/
+*.swp
+*.swo
+*~
+
+# Test results
+test-results/
+*.xml
+*.gcda
+*.gcno
+coverage/

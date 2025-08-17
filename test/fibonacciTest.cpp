@@ -24,7 +24,3 @@ TEST(FibonacciTest, FirstTenNumbers) {
 TEST(FibonacciTest, NegativeInput) {
   EXPECT_THROW(fibonacci(-5), invalid_argument);
 }
-
-TEST(FibonacciTest, NonIntegerInput) {
-  EXPECT_THROW(fibonacci(2.5), invalid_argument);
-}

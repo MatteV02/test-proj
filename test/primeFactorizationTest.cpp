@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include <primeFactorization.h>
+#include "primeFactorization.h"
 #include <vector>
 #include <algorithm>
 

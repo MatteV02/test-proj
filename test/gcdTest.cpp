@@ -49,3 +49,7 @@ TEST(GCDTest, CoPrimeNumbers) {
     EXPECT_EQ(gcd(13, 17), 1);
     EXPECT_EQ(gcd(17, 13), 1);
 }
+
+TEST(GCDTest, LargePrimeNumbers) {
+    EXPECT_EQ(gcd(1'000'000'007, 1'000'000'009), 1);
+}

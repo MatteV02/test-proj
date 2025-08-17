@@ -41,8 +41,3 @@ TEST(PrimeFactorizationTest, HandlesLargeNumber) {
     vector<int> expected = {2, 2, 2, 3, 3, 5, 7, 11, 13};
     EXPECT_EQ(primeFactorization(2*2*2*3*3*5*7*11*13), expected);
 }
-
-int main(int argc, char **argv) {
-    testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
